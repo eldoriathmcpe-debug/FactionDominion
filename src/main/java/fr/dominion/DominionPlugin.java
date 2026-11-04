@@ -1,5 +1,6 @@
 package fr.dominion;
 
+import org.bukkit.block.Container;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.TileState;
@@ -189,7 +190,9 @@ public final class DominionPlugin extends JavaPlugin implements Listener, Comman
             Location loc = player.getLocation();
             for (int x = -r; x <= r; x++) for (int y = -r; y <= r; y++) for (int z = -r; z <= r; z++) {
                 Block b = loc.getBlock().getRelative(x, y, z);
-                if (b.getType().isContainer()) containers++;
+               if (b.getState() instanceof Container) {
+    containers++;
+}
             }
             int percent = Math.min(100, containers);
             remaining--;
