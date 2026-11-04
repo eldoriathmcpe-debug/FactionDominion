@@ -1,0 +1,14 @@
+# Réglages de la première version
+cave-block:
+  radius: 8
+  refresh-ticks: 20
+  owner-only: true
+unclaim-finder:
+  usage-seconds: 8400 # 140 minutes
+  variants:
+    basic:
+      radius: 8
+    advanced:
+      radius: 16
+    elite:
+      radius: 24

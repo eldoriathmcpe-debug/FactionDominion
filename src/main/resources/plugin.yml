@@ -1,0 +1,14 @@
+name: FactionDominion
+version: 0.1.0
+main: fr.dominion.DominionPlugin
+api-version: '1.20'
+author: Dominion
+description: Objets personnalisés Cave Block et Unclaim Finder pour Faction Dominion
+commands:
+  dominion:
+    description: Donne les objets personnalisés Dominion
+    usage: /dominion give <caveblock|finder_basic|finder_advanced|finder_elite>
+    permission: dominion.admin
+permissions:
+  dominion.admin:
+    default: op
